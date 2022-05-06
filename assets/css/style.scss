@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+$navBoja: #f6d2d6;
+$akcentBoja: #923367;
+$bgColor: #f8f9fa;
+$font-brend: 'Great vibes', cursive;
+$font-tekst: 'Montserrat', sans-serif;
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: $font-tekst;
+}
+h2,h3{
+    color: $akcentBoja;
+}
+body{
+    background-color: $bgColor;
+}
+.displayflex{
+    display:flex;
+}
+.reverse{
+    flex-wrap: wrap-reverse;
+}
+.margina{
+    margin-bottom: 10px;
+}
+#scroll{
+    font-size: 3em;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 2;
+    i{
+        color: #000;
+        &:hover{
+            color: $akcentBoja;
+        }
+    }
+}
+//Header
+.navbar{
+    padding: .25rem!important;
+    background-color: $navBoja;
+}
+nav{
+        .navbar-brand{
+            font-size: 2em;
+            font-family: $font-brend;
+            color: $akcentBoja
+        }
+        a{
+            color: rgba(0,0,0,.80);
+            font-size: 1.25em;
+            &:hover{
+                color: $akcentBoja !important;
+                transition: 0.3s;
+            }
+        }
+        .dropdown-menu{
+            background-color: $navBoja;
+            border: 1px solid rgba(255,255,255,.15);
+            padding: 1rem 0;
+            left:-50px;
+            .dropdown-item{
+                color: rgba(0,0,0,.80);
+                line-height: 1;
+                padding: 0 1.5rem;
+                text-align: center;
+                &:hover{
+                    color: $akcentBoja;
+                    background-color: transparent;
+                    transition: 0.3s;
+                }
+                
+            }
+        }
+        .navbar-toggler{
+            color: rgba(0,0,0,.80);
+            &:hover{
+                color:$akcentBoja!important;
+                transition:0.3s;
+            }
+            i{
+                font-size: 1.4em;
+                &:hover{
+                    color: $akcentBoja;
+                }
+            }
+            &:focus{
+            outline: 0px black;            
+            }  
+        }
+        .active{
+            color: $akcentBoja!important;
+            background-color: transparent!important;
+            }
+}
+//Main
+//Carousel
+.carousel-caption{
+    bottom: 10%;
+    right: 20%;
+    left: 20%;
+    background-color: rgba(255,255,255,.90);
+    color: #000;
+    a{
+        color: #000;
+        text-decoration: underline;
+        &:hover{
+            color: $akcentBoja;
+            transition: 0.3s;
+        }
+    }
+}
+//About
+#about{
+    p{
+        font-size: 1.2em;
+        span{
+            font-family: $font-brend;
+            font-size: 1.2em;
+            color: $akcentBoja;
+        }
+    }
+    figure{
+        width: 80%;
+    }
+}
+.blockquote{
+    font-size:1rem;
+}
+.blockquote-footer{
+    color: $akcentBoja;
+}
+//Form
+#form{
+    .card-text{
+        font-size: 1.2em;
+    }
+}
+.btn{
+    border: 1px solid $akcentBoja;
+    color: #000;
+    font-weight: bold;
+    padding: .4rem .8rem;
+    &:hover{
+        background-color: $akcentBoja;
+        transition: 0.3s;
+    }
+    &:focus{
+        outline: none;
+        box-shadow: none;
+    }
+}
+textarea:focus,input:focus{
+    box-shadow: 0 0 0 0.2rem rgba(146, 51, 103,.25)!important;
+    border: 0!important;
+    transition: 0.3s;
+}
+//Footer
+#footer{
+    background-color: #f9e8ef;
+    h2{
+        font-weight:bold;
+    }
+    a{
+        color: rgba(0,0,0,.80);
+        &:hover{
+            color: $akcentBoja;
+            text-decoration: none;
+        }
+    }
+    i{
+        color: #000;
+        font-size: 2em;
+        &:hover{
+            color:$akcentBoja;
+        }
+    }
+}
+.list-group-item{
+    background-color: transparent;
+    text-align: center;
+    border:0;
+}
+//Gallery
+#gallery{
+    figure{
+        width:100%;
+    }
+    h1{
+        color:$akcentBoja;
+    }
+}
+
+
+.nav-wraper{
+    background-color: $navBoja;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 30px;
+    .brand-logo{
+        color: $akcentBoja;
+        font-family: $font-brend;
+        font-size: 2.25rem;
+    }
+    ul{
+        a{
+            color: rgba(0,0,0,.80);
+            font-size: 1.3rem;
+            &:hover{
+            background-color: transparent;
+            }
+        }
+    }
+}
+#author{
+    .container, img{
+            border-radius: 15px;
+    }
+    h1{
+        color: $akcentBoja;
+        font-size: 3rem;
+    }
+    a{
+        color: rgba(0,0,0,.80);
+        text-decoration: underline;
+        &:hover{
+            color: $akcentBoja;
+        }
+    }
+}
+.sidenav li>a{
+    &:hover{
+        background-color: transparent;
+        color: $akcentBoja;
+    }
+}
+.kolona{
+    width:33%;
+
+}
+.math2{
+    font-size: 2rem;
+}
+.math3{
+    font-size: 1.75rem;
+}
+
+@media screen and(max-width:992px){
+    #carousel{
+        h1{
+            font-size: 2rem;
+        }
+    }
+    #author{
+        .col{
+            margin: 0px auto;
+            float: none;
+        }
+    }
+}
+@media screen and(max-width:768px){
+    #about{
+        figure{
+            width:25%;
+        }
+        .blockquote{
+            width:75%;
+        }
+    }
+    #carousel{
+        h1{
+            font-size: 1.5rem;
+        }
+        .carousel-caption{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+}
+@media screen and(max-width:576px){
+    #about{
+        figure{
+            width:40%;
+        }
+        .blockquote{
+            width:60%;
+        }
+    }
+    .dropdown-item{
+        white-space: normal;
+    }
+    .displayflex{
+        flex-direction: column;
+        align-items: center;
+    }
+}
